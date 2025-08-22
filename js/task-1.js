@@ -6,4 +6,7 @@ listItem.forEach((elem) => {
   const elementsCount = elem.querySelectorAll("li").length;
   console.log(`Category: ${title}`);
   console.log(`Elements: ${elementsCount}`);
+  elem.querySelector("h2").classList.add('animals-title');
+  elem.querySelectorAll("li").forEach(elem => elem.classList.add('animals-text'));
+  elem.classList.add('animals-bg');
 });
