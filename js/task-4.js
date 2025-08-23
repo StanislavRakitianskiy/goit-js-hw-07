@@ -1,4 +1,5 @@
 const formRegistor = document.querySelector(".login-form");
+const btn = document.querySelector('button');
 formRegistor.addEventListener("submit", resultSubmit);
 function resultSubmit(elem) {
   elem.preventDefault();
@@ -17,3 +18,4 @@ function resultSubmit(elem) {
   console.log(formData);
   formRegistor.reset();
 }
+btn.classList.add('btn-form')
